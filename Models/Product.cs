@@ -11,8 +11,8 @@
         public int SupplierId { get; set; }
 
 
-        public Category Category { get; set; }
-        public Supplier Supplier { get; set; }
+        public required Category Category { get; set; }
+        public required Supplier Supplier { get; set; }
 
         public List<Inventory> Inventories { get; set; } = new();
     }
